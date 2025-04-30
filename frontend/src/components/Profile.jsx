@@ -26,8 +26,8 @@ function Profile() {
       }
 
       )
-      .catch(() =>
-        navigate('/'))
+      .catch((err) =>
+       console.log(err.message));
         
   }, []);
 
