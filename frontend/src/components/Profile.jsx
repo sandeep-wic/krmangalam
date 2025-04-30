@@ -20,7 +20,7 @@ function Profile() {
 
     })
       .then((res) => {
-        console.log("res", res.data.data);
+        console.log("res", res);
         setEmail(res.data.data.email);
         setName(res.data.data.name)
       }
