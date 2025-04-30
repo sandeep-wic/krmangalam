@@ -8,7 +8,7 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin: 'http://localhost:5173', // allow your frontend origin
+    origin: 'https://krmangalam-frontend.onrender.com', // allow your frontend origin
     credentials: true
   
 }))
