@@ -21,9 +21,9 @@ function Login() {
     }
     e.preventDefault();
     try {
-      const res = await axios.post('https://krmangalam-backend.onrender.com/api/signin', form, {
-        withCredentials: true
-      });
+     const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/signin`, form, {
+  withCredentials: true
+});
       console.log("res.data", res.data.success)
 
       if (res.data.success) {
