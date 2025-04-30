@@ -13,7 +13,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/signup', form, {
+      const response = await axios.post('https://krmangalam-backend.onrender.com/api/signup', form, {
         withCredentials: true
       });
       console.log("response.data.data.message", response.data.data.message)
